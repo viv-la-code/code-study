@@ -14,3 +14,29 @@
 
 
 //your code here
+
+//overachiever solution, but shows how to use a curried function (isDivisibleBy)
+function fizzBuzz (lowerLimit, upperLimit) {
+  const FIZZ = "Fizz"
+  const BUZZ = "Buzz"
+  const FIZZ_VAL = 3
+  const BUZZ_VAL = 5
+
+  function isDivisibleBy (divisor, successStr) {
+    return (x) => !(x % divisor) ? successStr : ''
+  }
+
+  const isFizz = isDivisibleBy(FIZZ_VAL, FIZZ)
+  const isBuzz = isDivisibleBy(BUZZ_VAL, BUZZ)
+  
+  let output = ''
+  
+  for(let i = lowerLimit; i <= upperLimit; i++) {
+    let line = isFizz(i) + isBuzz(i)
+    output += line || i
+  output += '\n'
+  }
+  return output
+}
+
+console.log(fizzBuzz(1, 100))
