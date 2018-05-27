@@ -2,7 +2,7 @@ This is a repo for code problems and solutions for the unofficial Viv Labs, Inc.
 
 
 # How to use this repo
-Each folder is a problem. The master branch will contain a problem description and blank code file. Please fork this repo, and pull any changes into a branch with your username.
+Each folder is a problem. The master branch will contain a problem description and blank code file. Please fork this repo, and pull any changes into a branch with your username. You will also need to create a branch for your username in the main repo to pull changes from your fork. 
 
 Example: 
 My github is bradlm. So, any of my solutions should be merged into the bradlm branch of viv-la-code/code-study.
