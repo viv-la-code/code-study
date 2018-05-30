@@ -1,7 +1,7 @@
 This is a repo for code problems and solutions for the unofficial Viv Labs, Inc. code study group. 
 
 # Setup
-I recommend you fork this repo and add it as a remote so you have your code saved for your future reference.
+I recommend you fork this repo and add it as a remote so you have your code preserved on your own github even should something happen to the main repository. 
 
 ## Forked setup (recommended)
 1. Fork this repo
