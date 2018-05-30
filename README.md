@@ -10,12 +10,12 @@ I recommend you fork this repo and add it as a remote so you have your code pres
 1. Create a working (feature) branch named your github username
 1. Push your clean working branch onto the main repo
 1. Once you have new code committed, push your working branch to your fork
-1. Create a pull request against your clean working branch on the main repo and merge your code
+1. Create a pull request against your clean working branch on the main repo and merge your code (not required, but nice so we can all compare work and learn from each other!)
 
 ## Quick setup
 1. Clone this repo
 1. Create a working (feature) branch named your github username
-1. Once you have new code committed, push your working branch to this repo
+1. Once you have new code committed, push your working branch to this repo (not required, but nice so we can all compare work and learn from each other!)
 
 
 # How to use this repo
