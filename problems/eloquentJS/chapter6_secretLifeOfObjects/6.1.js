@@ -6,3 +6,32 @@ Give the Vec prototype two methods, plus and minus, that take another vector as 
 
 Add a getter property length to the prototype that computes the length of the vector—that is, the distance of the point (x, y) from the origin (0, 0).
 */
+// Your code here.
+//d = sqrt{(x2-x1)^2 +(y2-y1)^2}
+class Vec {
+  constructor(x,y) {
+    this.x = x
+    this.y = y
+    
+  }
+  plus (v) {
+    return new Vec(this.x + v.x, this.y + v.y)
+  }
+  minus(v) {
+    return new Vec(this.x - v.x, this.y - v.y)
+  }
+  get length () {
+    const origin = {
+      x: 0,
+      y: 0
+    }
+    return Math.sqrt(Math.pow(this.x - origin.x, 2) + Math.pow(this.y - origin.y, 2))
+  }
+}
+
+console.log(new Vec(1, 2).plus(new Vec(2, 3)));
+// → Vec{x: 3, y: 5}
+console.log(new Vec(1, 2).minus(new Vec(2, 3)));
+// → Vec{x: -1, y: -1}
+console.log(new Vec(3, 4).length);
+// → 5

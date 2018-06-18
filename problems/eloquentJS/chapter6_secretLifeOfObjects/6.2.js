@@ -8,3 +8,54 @@ Use the === operator, or something equivalent such as indexOf, to determine whet
 
 Give the class a static from method that takes an iterable object as argument and creates a group that contains all the values produced by iterating over it.
 */
+
+
+class Group {
+  // Your code here.
+  constructor () {
+    this.root = null
+    this.Node = class {
+      constructor(val, rChild = null, lChild = null) {
+        this.v = val
+        this.r = rChild
+        this.l = lChild
+      }
+    }
+  }
+  _createTreeFrom(array) {
+    this.root = new this.Node(array.pop())
+    while(array.length) {
+      this._addToTree(array.pop())
+    }
+  }
+  _balanceTree () {
+  }
+  _addToTree (val) {
+    const traverseFrom = function (node) {
+      if(val > node.v) {
+        
+      } else if(val < node.v) {
+      }
+    }
+    traverseFrom(this.root)
+  }
+  from(array) {
+    _createTreeFrom(array.slice())
+  }
+  has(value) {
+  }
+  add(value) {
+  }
+  delete(value) {
+  }
+}
+
+let group = Group.from([10, 20]);
+console.log(group.has(10));
+// → true
+console.log(group.has(30));
+// → false
+group.add(10);
+group.delete(10);
+console.log(group.has(10));
+// → false
