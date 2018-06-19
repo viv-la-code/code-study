@@ -10,47 +10,28 @@ Give the class a static from method that takes an iterable object as argument an
 */
 
 
+// Your code here.
 class Group {
-  // Your code here.
   constructor () {
-    this.root = null
-    this.Node = class {
-      constructor(val, rChild = null, lChild = null) {
-        this.v = val
-        this.r = rChild
-        this.l = lChild
-      }
-    }
+    this.data = new Map()
   }
-  _createTreeFrom(array) {
-    this.root = new this.Node(array.pop())
-    while(array.length) {
-      this._addToTree(array.pop())
-    }
-  }
-  _balanceTree () {
-  }
-  _addToTree (val) {
-    const traverseFrom = function (node) {
-      if(val > node.v) {
-        
-      } else if(val < node.v) {
-      }
-    }
-    traverseFrom(this.root)
-  }
-  from(array) {
-    _createTreeFrom(array.slice())
+  static from(array) {
+    const group = new Group()
+    array.forEach(value => group.add(value))
+    return group
   }
   has(value) {
+    return Boolean(this.data.get(value))
   }
   add(value) {
+    this.data.set(value, true)
   }
   delete(value) {
+    this.data.delete(value)
   }
 }
 
-let group = Group.from([10, 20]);
+let group = Group.from([10, 20]); 
 console.log(group.has(10));
 // → true
 console.log(group.has(30));
